@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "lessn 3", "lessn 3\lessn 3.pyproj", "{93405CF7-BDF5-47BF-8DE7-2EF3131E3CBB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93405CF7-BDF5-47BF-8DE7-2EF3131E3CBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93405CF7-BDF5-47BF-8DE7-2EF3131E3CBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {43073F5B-C9BD-4CC9-93FF-83F9D40B13B3}
+	EndGlobalSection
+EndGlobal
