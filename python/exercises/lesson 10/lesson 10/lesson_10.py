@@ -1,5 +1,5 @@
-#import random
-#def BinariSearch(a, x):
+import random
+#def BinariSearch(a, x):   # option 1 = Binary test ==> the Best
 #    low=0
 #    up=len(a)-1
 #    while(low<=up):
@@ -11,91 +11,75 @@
 #        else:
 #            low=mid+1
 #    return -1
-# def Search(a, x):
-#     for i in range(len(a)):
-#         if(a[i]==x):
-#             return i
-#     return -1
-   
-#a=[0]*100000
-#a[0]=2
-#for i in range(1,len(a)):
-#    a[i]=a[i-1]+random.randint(1,6)
-#print(a)    
-#y=int(input("Enter a number : "))
-#print(BinariSearch(a, y))  
-# print(Search(a, y))
 
-# a=[1,3,4,5,6,7,22,44,55,66,77,88]
-# x=56
+def Search(a, x):            # option 2 = Comprehensive inspection
+    for i in range(len(a)):
+        if(a[i]==x):
+            return i
+    return -1
+####  mane  ####
+a=[0]*1000
+a[0]=2
+for i in range(1,len(a)):
+    a[i]=a[i-1]+random.randint(1,6)
+print(a)    
+y=int(input("Enter a number : "))
+print(BinariSearch(a, y))  
+print(Search(a, y))
 
-#   1*2*2*2*2*2*2*2 = 2^7   =   128
-#   128/2/2/2/2/2/2/2 = 1
-#   log
+      ##An explanation of the difference between option 1 and 2
+a=[1,3,4,5,6,7,22,44,55,66,77,88]
+x=56
 
+##   1*2*2*2*2*2*2*2 = 2^7   =   128
+##   128/2/2/2/2/2/2/2 = 1
+##   log
 
-# r=((3,"safgsd",5),(7,7,7),(2))
-# # a=(3,4,5)
-# # x=[2,4,a,66]
+##--------------------------------------------------------
+#r=((3,"safgsd",5),(7,7,7),(2))  ## Explanation of 'tapel'
+## a=(3,4,5)
+## x=[2,4,a,66]
 
-# a=[4, 6, (77,66,99,11,33), 33]
-# print(a)
-# for i in range(len(a)):
-#     print(a[i])
-# a[1]=-2222
-# print(a[2][1])
-# a[2][1]=9090
+#a=[4, 6, (77,66,99,11,33), 33]
+#print(a)
+#for i in range(len(a)):
+#    print(a[i])
+#a[1]=-2222
+#print(a[2][1])
+#a[2][1]=9090
 
-# t=(2,3) #   tuple
-# print(t)
-# print(t[0])
-# t[0]=77
-
-
-# a=[
-#     [1,4,4,6,5,7],
-#     [4,3,6,9,9,9],
-#     [3,6,5,7,9,1],
-#     [9,3,7,5,7,1],
-#     [5,3,6,6,7,6],
-# ]
-# m=0
-# for r in range(len(a)):
-#     for c in range(len(a[0])):
-#         if(c<len(a[0])):
-#             if(a[r][c]==a[r][c+1]):
-#                 m+=1
-#         if(r<len(a)):                
-#             if(a[r][c]==a[r+1][c]):
-                 #m+=1
+#t=(2,3) #   tuple
+#print(t)
+#print(t[0])
+#t[0]=77
   
+##---------------------------------------------------
+#a=[             #Counter of pairs of numbers (to the side and below)
+#    [1,4,4,6,5,7],
+#    [4,3,6,9,9,9],
+#    [3,6,5,7,9,1],
+#    [9,3,7,5,7,1],
+#    [5,3,6,6,7,6]
+#]
+#m=0
+#for r in range(len(a)-1):
+#    for c in range(len(a[0])-1):
+#        if(a[r][c]==a[r][c+1]):
+#            m+=1
+#        if(a[r][c]==a[r+1][c]):
+#            m+=1
+#    #c+=1                    # option 1
+#    #if(a[r][c]==a[r+1][c]): #
+#    #    m+=1                #
+  
+#for r in range(len(a)-1):                        # option 2
+#    if(a[r][len(a[0])-1]==a[r+1][len(a[0])-1]):  #
+#        m+=1                                     #
+#for c in range(len(a[0])-1):
+#    if(a[len(a)-1][c]==a[len(a)-1][c+1]):
+#        m+=1
+#print(m) 
 
-a=[             #Counter of pairs of numbers (to the side and below)
-    [1,4,4,6,5,7],
-    [4,3,6,9,9,9],
-    [3,6,5,7,9,1],
-    [9,3,7,5,7,1],
-    [5,3,6,6,7,6]
-]
-m=0
-for r in range(len(a)-1):
-    for c in range(len(a[0])-1):
-        if(a[r][c]==a[r][c+1]):
-            m+=1
-        if(a[r][c]==a[r+1][c]):
-            m+=1
-    #c+=1
-    #if(a[r][c]==a[r+1][c]):
-    #    m+=1
-   
-           
-for r in range(len(a)-1):
-    if(a[r][len(a[0])-1]==a[r+1][len(a[0])-1]):
-        m+=1
-for c in range(len(a[0])-1):
-    if(a[len(a)-1][c]==a[len(a)-1][c+1]):
-        m+=1
-print(m) 
 ##------------------------------------------
 #a=[                   # Prints the largest number from each column
 #    [1,4,3,6,5,7],    
