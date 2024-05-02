@@ -1,0 +1,8 @@
+C:\Users\This User\Desktop\python\lesson 13\lesson 13\bin\Debug\lesson 13.exe.config
+C:\Users\This User\Desktop\python\lesson 13\lesson 13\bin\Debug\lesson 13.exe
+C:\Users\This User\Desktop\python\lesson 13\lesson 13\bin\Debug\lesson 13.pdb
+C:\Users\This User\Desktop\python\lesson 13\lesson 13\obj\Debug\lesson 13.csproj.AssemblyReference.cache
+C:\Users\This User\Desktop\python\lesson 13\lesson 13\obj\Debug\lesson 13.csproj.SuggestedBindingRedirects.cache
+C:\Users\This User\Desktop\python\lesson 13\lesson 13\obj\Debug\lesson 13.csproj.CoreCompileInputs.cache
+C:\Users\This User\Desktop\python\lesson 13\lesson 13\obj\Debug\lesson 13.exe
+C:\Users\This User\Desktop\python\lesson 13\lesson 13\obj\Debug\lesson 13.pdb
